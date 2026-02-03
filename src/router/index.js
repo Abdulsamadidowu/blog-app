@@ -26,7 +26,7 @@ const router = createRouter({
       component: ()=>import("../views/Contactview.vue"),
     },
     {
-      path: "/:pathMatch(.*)*",
+      path: "/:catchAll(.*)",
       name: "NotFound",
       component: ()=>import("../views/Errorview.vue")
     },
